@@ -1,5 +1,6 @@
 <template>
   <v-card
+
     class="mx-auto"
     max-width="400"
   >
@@ -76,7 +77,9 @@
         Full Report
       </v-btn>
     </v-card-actions>
+  
   </v-card>
+  
 </template>
 
 <script>
