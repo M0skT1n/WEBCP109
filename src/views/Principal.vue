@@ -17,19 +17,7 @@
           active-class="deep-purple--text text--accent-4"
         >
           <v-list-item>
-            <v-list-item-title>Clima São Paulo</v-list-item-title>
-          </v-list-item>
-
-          <v-list-item>
-            <v-list-item-title>Clima Brasília</v-list-item-title>
-          </v-list-item>
-
-          <v-list-item>
-            <v-list-item-title>Clima Rio de Janeiro</v-list-item-title>
-          </v-list-item>
-
-          <v-list-item>
-            <v-list-item-title>Clima Florianópolis</v-list-item-title>
+            <v-list-item-title>Clima Sorocaba</v-list-item-title>
           </v-list-item>
         </v-list-item-group>
       </v-list>
@@ -37,12 +25,11 @@
       <v-app-bar app>
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
 
-      <v-toolbar-title>Application</v-toolbar-title>
+      <v-toolbar-title>Climas</v-toolbar-title>
     </v-app-bar>
 
     <v-main>
-      <content-component/>
-      <!--  -->
+    <content-component/>
     </v-main>
     <footer-component/>
     <bottom/>
