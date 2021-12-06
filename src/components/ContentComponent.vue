@@ -1,100 +1,58 @@
 <template>
-  <v-card
-
-    class="mx-auto"
-    max-width="400"
-  >
-    <v-list-item two-line>
-      <v-list-item-content>
-        <v-list-item-title class="text-h5">
-          Sorocaba
-        </v-list-item-title>
-        <v-list-item-subtitle>Mon, 12:30 PM, Mostly sunny</v-list-item-subtitle>
-      </v-list-item-content>
-    </v-list-item>
-
-    <v-card-text>
-      <v-row align="center">
-        <v-col
-          class="text-h2"
-          cols="6"
-        >
-          25&deg;C
-        </v-col>
-        <v-col cols="6">
-          <v-img
-            src="https://cdn.vuetifyjs.com/images/cards/sun.png"
-            alt="Sunny image"
-            width="92"
-          ></v-img>
-        </v-col>
+  <v-card class="mx-auto" max-width="1200">
+    <v-container>
+      <v-row style="padding-bottom: 100px">
+        <h2>Missão:</h2>
+        <p>
+          Oferecer atendimento veterinário capacitado e produtos de qualidade,
+          cuidando com respeito, carinho e dedicação de todo e qualquer animal,
+          visando sempre atender nossos clientes de forma diferenciada e com
+          profissionalismo.
+        </p>
+        <v-img
+          class="mx-auto"
+          max-width="500"
+          src="../../public/img/Cat.jpg"
+        ></v-img>
       </v-row>
-    </v-card-text>
-
-    <v-list-item>
-      <v-list-item-icon>
-        <v-icon>mdi-send</v-icon>
-      </v-list-item-icon>
-      <v-list-item-subtitle>14 km/h</v-list-item-subtitle>
-    </v-list-item>
-
-    <v-list-item>
-      <v-list-item-icon>
-        <v-icon>mdi-cloud-download</v-icon>
-      </v-list-item-icon>
-      <v-list-item-subtitle>27%</v-list-item-subtitle>
-    </v-list-item>
-
-    <v-slider
-      v-model="time"
-      :max="6"
-      :tick-labels="labels"
-      class="mx-4"
-      ticks
-    ></v-slider>
-
-    <v-list class="transparent">
-      <v-list-item
-        v-for="item in forecast"
-        :key="item.day"
-      >
-        <v-list-item-title>{{ item.day }}</v-list-item-title>
-
-        <v-list-item-icon>
-          <v-icon>{{ item.icon }}</v-icon>
-        </v-list-item-icon>
-
-        <v-list-item-subtitle class="text-right">
-          {{ item.temp }}
-        </v-list-item-subtitle>
-      </v-list-item>
-    </v-list>
-
-    <v-divider></v-divider>
-
-    <v-card-actions>
-      <v-btn text>
-        Full Report
-      </v-btn>
-    </v-card-actions>
-  
+      <v-row style="padding-bottom: 100px">
+        <h2>Visão:</h2>
+        <br />
+        <p>
+          Ser reconhecida como centro veterinário de referência no segmento pet,
+          através da excelência em nossos serviços e inovação constante da nossa
+          empresa, tomando cuidado para com os pets.
+        </p>
+        <v-img
+          class="mx-auto"
+          max-width="500"
+          src="../../public/img/Doges.jpg"
+        ></v-img>
+      </v-row>
+      <v-row style="padding-bottom: 100px">
+        <h2>Valores:</h2>
+        <p>
+          Ética, transparência e honestidade acima de tudo; Prestação de
+          serviços de qualidade, priorizando o bem estar animal; Atendimento
+          diferenciado e de qualidade, em favor da satisfação do cliente;
+          Criatividade para ousar e inovar a cada dia; Comprometimento em tudo
+          aquilo que nos dispusermos a fazer.
+        </p>
+        <v-img
+          class="mx-auto"
+          max-width="500"
+          src="../../public/img/Dogo.jpg"
+        ></v-img>
+      </v-row>
+    </v-container>
   </v-card>
-  
 </template>
 
 <script>
-  export default {
-    name: 'ContentComponent',
-    data () {
-      return {
-        labels: ['SU', 'MO', 'TU', 'WED', 'TH', 'FR', 'SA'],
-        time: 0,
-        forecast: [
-          { day: 'Tuesday', icon: 'mdi-white-balance-sunny', temp: '33\xB0/18\xB0' },
-          { day: 'Wednesday', icon: 'mdi-white-balance-sunny', temp: '30\xB0/19\xB0' },
-          { day: 'Thursday', icon: 'mdi-cloud', temp: '34\xB0/23\xB0' },
-        ],
-      }
-    },
-  }
+export default {
+  name: "ContentComponent",
+  data() {
+    return {};
+  },
+};
 </script>

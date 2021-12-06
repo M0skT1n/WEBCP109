@@ -1,7 +1,8 @@
 <template>
   <v-footer
-    color="primary lighten-1"
+    color="purple"
     padless
+    app
   >
     <v-row
       justify="center"
@@ -18,10 +19,10 @@
         {{ link }}
       </v-btn>
       <v-col
-        class="primary lighten-2 py-4 text-center white--text"
+        class="purple py-4 text-center white--text"
         cols="12"
       >
-        {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
+        {{ new Date().getFullYear() }} — <strong>PetShop Goes</strong>
       </v-col>
     </v-row>
   </v-footer>

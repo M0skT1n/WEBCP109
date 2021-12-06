@@ -1,7 +1,7 @@
 <template>
   <v-bottom-navigation
     :value="value"
-    color="primary"
+    color="purple"
     fixed
   >
     <v-btn>

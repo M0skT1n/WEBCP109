@@ -1,57 +1,26 @@
-
 <template>
   <v-app id="inspire">
-    <system-bar/>
-    <v-navigation-drawer
-      v-model="drawer"
-      absolute
-      bottom
-      temporary
-    >
-      <v-list
-        nav
-        dense
-      >
-        <v-list-item-group
-          v-model="group"
-          active-class="deep-purple--text text--accent-4"
-        >
-          <v-list-item>
-            <v-list-item-title>Clima Sorocaba</v-list-item-title>
-          </v-list-item>
-        </v-list-item-group>
-      </v-list>
-    </v-navigation-drawer>
-      <v-app-bar app>
-      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-
-      <v-toolbar-title>Climas</v-toolbar-title>
-    </v-app-bar>
-
     <v-main>
-    <content-component/>
+      <content-component />
     </v-main>
-    <footer-component/>
-    <bottom/>
+    <bottom />
   </v-app>
 </template>
 
 <script>
-import SystemBar from '../components/SystemBar.vue'
-import FooterComponent from '../components/Footer.vue'
-import bottom from '../components/Bottom.vue'
-import ContentComponent from '../components/ContentComponent.vue'
-  export default {
-    components: {FooterComponent,SystemBar,bottom,ContentComponent},
-    data: () => ({
-      drawer: false,
-      group: null,
-    }),
+import bottom from "../components/Bottom.vue";
+import ContentComponent from "../components/ContentComponent.vue";
+export default {
+  components: { bottom, ContentComponent },
+  data: () => ({
+    drawer: false,
+    group: null,
+  }),
 
-    watch: {
-      group () {
-        this.drawer = false
-      },
+  watch: {
+    group() {
+      this.drawer = false;
     },
-  }
+  },
+};
 </script>
